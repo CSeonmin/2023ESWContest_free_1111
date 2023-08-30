@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot name="AHR_manipulation" xmlns:xacro="http://ros.org/wiki/xacro">
+
+ <!-- Import Rviz colors -->
+  <!-- <xacro:include filename="$(find open_manipulator_p_description)/urdf/materials.xacro" /> -->
+
+  <!-- Import URDF -->
+  <xacro:include filename="$(find open_manipulator_p_description)/urdf/open_manipulator_p.urdf.xacro" />
+
+  <!-- AHR URDF -->
+  <xacro:include filename="$(find urdf_ahr)/robots/AHR.xacro"/>
+
+  <!-- <link name="base_link"/> -->
+
+  <!-- Base fixed joint -->
+  <joint name="base_fixed" type="fixed">
+    <origin xyz="0.15 -0.15 0.12" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link1"/>
+  </joint>
+
+</robot>

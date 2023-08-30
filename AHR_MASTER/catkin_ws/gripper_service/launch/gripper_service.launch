@@ -1,0 +1,4 @@
+<launch>
+  <node name="gripper_service_server" pkg="gripper_service" type="service_server"/>
+  <!-- <node name="open_manipulator_pick_and_place" pkg="open_manipulator_pick_and_place" type="open_manipulator_jin_PAP" output="screen"/> -->
+</launch>
